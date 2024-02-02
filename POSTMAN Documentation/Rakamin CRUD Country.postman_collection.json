@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "43a9e763-15ce-47ec-96d4-0cf5a40db2f4",
+		"name": "Rakamin CRUD Country",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/countries?page=1&limit=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"countries"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Countries",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"iso\": \"XX\",\n    \"name\": \"Sample Country\",\n    \"nicename\": \"Sample Nice Name\",\n    \"iso3\": \"XXX\",\n    \"numcode\": 123,\n    \"phonecode\": 987\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Country",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"iso\": \"XX\",\n    \"name\": \"Sample Country 2\",\n    \"nicename\": \"Sample Nice Name\",\n    \"iso3\": \"XXX\",\n    \"numcode\": 123,\n    \"phonecode\": 987\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/countries/252",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"countries",
+						"252"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Country",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"iso\": \"XX\",\n    \"name\": \"Sample Country 2\",\n    \"nicename\": \"Sample Nice Name\",\n    \"iso3\": \"XXX\",\n    \"numcode\": 123,\n    \"phonecode\": 987\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/countries/252",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"countries",
+						"252"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Country",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/countries/252",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"countries",
+						"252"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
