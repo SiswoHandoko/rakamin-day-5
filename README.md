@@ -1,2 +1,2 @@
-# rakamin-day-5
-rakamin day 5
+# rakamin-restfull
+Repo Rakamin Trainee BSI ODP 2023
